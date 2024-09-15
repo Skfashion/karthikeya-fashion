@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* color: #333; */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    /* Ensure the hero section doesn't get hidden */
+}
+
+/* Sliding Background Effect */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ensure background images cover the area */
+    background-position: center center; /* Center the background image */
+    animation: slide 15s infinite alternate;
+    z-index: 1;
+}
+
+/* Animation for sliding background */
+@keyframes slide {
+    0% {
+        background-image: url('images/hero-background1.jpg');
+    }
+    50% {
+        background-image: url('images/hero-background2.jpg'); /* Ensure you have this image */
+    }
+    100% {
+        background-image: url('images/hero-background3.jpg'); /* Ensure you have this image */
+    }
+}
+
+.hero h1, .hero p, .hero .btn {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff6347; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+    transform: scale(1.1);
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact ul {
+    padding-left: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+
+footer .social-icons a {
+    margin-right: 10px;
+    color: white;
+}
+.footermap iframe{
+    width: 500px;
+    height: 370px;
+}
+.footermap h5{
+    font-size: 25px;
+}
+.list-unstyled li{
+    margin-bottom: 7px;
+}
+.list-unstyled li a{
+    margin-left: 40px;
+}
+.listquick li{
+    margin-left: -20px;
+}
+.social a{
+    margin-left: 10px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.carousel-item h5,p{
+    color: black;
+}
+.nav-item{
+    font-size:20x;
+    font-weight: bold;
+    color: red;
+}
+.nav-link{
+    color: red;
+}
+.navbar-nav li a{
+    color: rebeccapurple;
+}
